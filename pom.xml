@@ -11,8 +11,13 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.0.RELEASE</version>
+        <version>2.2.5.RELEASE</version>
     </parent>
+
+    <properties>
+        <!--自定义es版本，要保证和安装的es版本一致-->
+        <elasticsearch.version>7.10.0</elasticsearch.version>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -29,6 +34,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
+            <version>1.2.73</version>
         </dependency>
 
 
